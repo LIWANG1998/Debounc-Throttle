@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <h1><router-link to="/">防抖</router-link></h1>
-      <h1><router-link to="/about">节流</router-link></h1>
+      <router-link to="/Click">Click</router-link>
+      <router-link to="/Scoll">Scoll</router-link>
     </div>
     <router-view />
   </div>
@@ -16,23 +16,21 @@
 }
 html,
 body {
-  background-color: #e9ecef;
-  height: 100%;
-  font-size: 20px;
+  background: #282c34;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   width: 700px;
   margin: 0 auto;
-  background-color: white;
-  height: 100%;
+  height: 10000px;
   padding: 20px;
-  text-align: left;
+  text-align: center;
+  color: white;
 }
 
 #nav {
@@ -42,7 +40,9 @@ body {
   a {
     font-weight: bold;
     color: #2c3e50;
+    font-size: 40px;
     text-decoration: none;
+    color: white;
     &.router-link-exact-active {
       color: #42b983;
     }
