@@ -21,7 +21,8 @@ export default class Scoll extends Vue {
    * 监听滚动条事件
    */
   private mounted() {
-    window.addEventListener("scroll", _.debounce(this.Scoll, 400));
+    window.addEventListener("scroll", this.Scoll);
+    // window.addEventListener("scroll", _.debounce(this.Scoll, 400));
   }
   private Scoll() {
     this.ScollNum = document.documentElement.scrollTop;

@@ -41,7 +41,7 @@ export default class Scoll extends Vue {
   /**
    * 防抖时间
    */
-  private d_time = 400;
+  private d_time = 300;
   private leading = false;
   private trailing = true;
   /**
@@ -57,7 +57,15 @@ export default class Scoll extends Vue {
   /**
    * 选色组
    */
-  private colors = ["#24adf3", "#0dffd2", "#fd78ff", "#b5ff00", "#ff6d6d"];
+  private colors = [
+    "#24adf3",
+    "#0dffd2",
+    "#fd78ff",
+    "#b5ff00",
+    "#ff6d6d",
+    "#B2BEFF",
+    "#99FDFF",
+  ];
   /**
    * 时间间隔函数
    */
